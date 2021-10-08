@@ -1,0 +1,25 @@
+mat-form-field {
+    font-size: 14px;
+    width: 100%;
+}
+table {
+    width: 100%;
+}
+.button {
+    background-color: #ffaa40;
+    margin-top: 20px;
+}
+.container {
+    margin: 20px;
+}
+.title {
+    color: #707070;
+    margin-bottom: 0;
+    text-align: center;
+}
+.w10x {
+    width: 10%;
+}
+.w30x {
+    width: 30%;
+}

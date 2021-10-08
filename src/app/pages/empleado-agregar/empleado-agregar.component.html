@@ -1,0 +1,28 @@
+<h2 mat-dialog-title>Agregar un nuevo Empleado</h2>
+<mat-dialog-content class="mat-typography">
+
+    <div class="container">
+        <form [formGroup]="empleadoForm" (keydown.enter)="$event.preventDefault()" (ngSubmit)="agregar()">
+            <mat-form-field appearance="fill">
+                <mat-label>Nombre</mat-label>
+                <input matInput formControlName="name" placeholder="Ignacio Duarte" required>
+                <mat-error *ngIf="empleadoForm.controls['name'].invalid">{{getErrorMessage('name')}}</mat-error>
+            </mat-form-field>
+
+            <mat-form-field appearance="fill">
+                <mat-label>Apellido</mat-label>
+                <input matInput type="text" formControlName="last_name" placeholder="Perez Sotelo" required>
+                <mat-error *ngIf="empleadoForm.controls['last_name'].invalid">{{getErrorMessage('last_name')}}</mat-error>
+            </mat-form-field>
+
+            <mat-form-field appearance="fill">
+                <mat-label>Cumpleaños</mat-label>
+                <input matInput type="date" formControlName="birthday" placeholder="2000/05/29" required>
+                <mat-error *ngIf="empleadoForm.controls['birthday'].invalid">{{getErrorMessage('birthday')}}</mat-error>
+            </mat-form-field>
+    
+            <button mat-raised-button color="primary" type="submit" [disabled]="empleadoForm.invalid"> Confirmar </button>
+        </form>
+    </div>
+
+</mat-dialog-content>

@@ -1,0 +1,13 @@
+/* carousel {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+} */
+.container {
+    margin: 20px;
+}
+.title {
+    color: #707070;
+    /* margin-top: 16px; */
+    text-align: center;
+}
